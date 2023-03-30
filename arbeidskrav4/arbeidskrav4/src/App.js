@@ -3,9 +3,10 @@ import './App.css';
 import {useState, useEffect} from "react";
 import Main from './components/Main';
 import '../src/components/css/main.css'
+import SearchPage from './components/SearchPage';
 
 
-export default function App() {
+export default function App(  ) {
     const [recipes, setRecipes] = useState([])
     const [search, setSearch] = useState("James Bond")
 
@@ -20,12 +21,15 @@ export default function App() {
 
       getRecipes()
      }, [search]);
+
+     console.log(recipes)
     
      return (
-      <>
-        <Main recipes={recipes} />
-      </>
-          )
+
+        <>
+          <Main recipes={recipes} />
+        </>
+            )
 }
 
 

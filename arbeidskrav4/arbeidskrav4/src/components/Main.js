@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Search from './SearchResults';
 import SearchPage from './SearchPage';
 import Layout from './Layout';
-export default function Main({movies, setSearch, getMovies,title, recipes}){
+export default function Main({movies, setSearch, getMovies,title, recipes, }){
     /*
     {
         <article>
@@ -24,7 +24,7 @@ export default function Main({movies, setSearch, getMovies,title, recipes}){
 
             {
                 recipes?.map(item => {
-                    return <MovieCard title={item.Title} img={item.Poster} year={item.Year} type={item.Type} />})
+                    return <MovieCard title={item.Title} img={item.Poster} year={item.Year} type={item.Type}  />})
                      }
            </div>
         </section>

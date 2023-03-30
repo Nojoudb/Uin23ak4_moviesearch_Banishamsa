@@ -2,7 +2,7 @@
 
 // import {MagnifyingGlassIcon} from '@heroicons/react/24/outline'
 
-export default function Search({setSearch, getMovies}){
+export default function SearchResults({setSearch, getMovies}){
 
     const handleSubmit = (event) =>{
         event.preventDefault()
@@ -16,10 +16,12 @@ export default function Search({setSearch, getMovies}){
     return (
         <form onSubmit={handleSubmit}>
             <input type="search" className="search2" placeholder="Søk etter filmer" onChange={handleSearch} />
-            <button type="submit"  className="search-button" onClick={getMovies}></button>
+            <input type="submit" className="search-button" value="Søk"></input>
         </form>
     )
 }
+            {/* <button type="submit"  className="search-button" onClick={getMovies}></button> */}
+
 
 
       
