@@ -6,7 +6,7 @@ import '../src/components/css/main.css'
 import SearchPage from './components/SearchPage';
 
 
-export default function App(  ) {
+export default function App(   ) {
     const [recipes, setRecipes] = useState([])
     const [search, setSearch] = useState("James Bond")
 
@@ -27,7 +27,7 @@ export default function App(  ) {
      return (
 
         <>
-          <Main recipes={recipes} />
+          <Main setSearch={setSearch} recipes={recipes} />
         </>
             )
 }

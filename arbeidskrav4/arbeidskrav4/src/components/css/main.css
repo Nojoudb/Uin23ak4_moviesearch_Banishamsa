@@ -10,16 +10,6 @@
     box-sizing: border-box;
 }
 
- .header{
-    /* color: #8a2be2;
-    margin: 20px;
-    padding: 20px; */
-    padding: 60px;
-    text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 30px;
-} 
 
 
 h2{
@@ -34,9 +24,7 @@ padding: 40px;
        border: 2px solid #565457;;
        padding: 10px;
        float: left; 
-      /* width: 100%; */
-     /* display: flex; */
-     /* justify-content: center;  */
+   
 
     
 }
@@ -85,9 +73,6 @@ body {
     flex-wrap: wrap;
 } 
 
-/* .image{
- display: flex;
-} */
 
 
   
