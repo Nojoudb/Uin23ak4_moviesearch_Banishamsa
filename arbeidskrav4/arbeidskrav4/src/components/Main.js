@@ -13,21 +13,21 @@ export default function Main({movies, setSearch, getMovies,title, recipes}){
             <Layout/>
         </article>
       }*/
+      console.log(recipes)
     return (
       <>
-      <Search setSearch={setSearch} getMovies={getMovies} />
+       
+       <Search setSearch={setSearch} getMovies={getMovies} />
       <section className='movie-view'>
-        <h2> 10 James Bond filmer</h2>
-        <ul>
+        <h2> 10 James Bond Filmer</h2>
+        <div className="movie-wrapper">
+
             {
                 recipes?.map(item => {
-                    return <MovieCard title={item.Title} />})
-            }
-        </ul>
-        
-          
+                    return <MovieCard title={item.Title} img={item.Poster} year={item.Year} type={item.Type} />})
+                     }
+           </div>
         </section>
       </>
 
-      );
-}
+      ); }

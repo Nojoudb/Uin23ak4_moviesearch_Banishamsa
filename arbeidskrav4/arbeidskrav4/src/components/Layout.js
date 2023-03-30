@@ -3,12 +3,13 @@ import { Link, Outlet } from "react-router-dom";
 export default function Layout(){
     return (
         <div id="container">
-          <header>
+           <header> 
+          <div className="header">
             <Link to="/">
                 <h1>Filmsøk</h1>
             </Link>
-            
-          </header>
+            </div>
+          </header> 
           <main>
             <Outlet />
           </main>
